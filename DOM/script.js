@@ -24,3 +24,19 @@ const detailsObj = {
     isEmployed: false
 };
 console.log("Object with all devs details ", detailsObj);
+
+function calculator(a, b){
+    let a = prompt("Enter the first number: ");
+    if (a < 0) {
+        alert("Number must be 0 or greater");
+    }
+
+    let b = prompt("Enter the second number: ");
+    if (b < 0) {
+      alert("Number must be 0 or greater");
+    }
+
+    let operation = prompt("Select an opration to perform")
+
+
+}
