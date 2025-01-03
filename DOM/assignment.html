@@ -41,7 +41,27 @@
         </script> 
     </div>
 
+    <div>
+        <h1>Looping Over 1 to 10</h1>
+        <button onclick="loop()">Loop</button>
+
+        <ol id="outputList"></ol>
     
+        <script>
+            function loop(){
+            let list = document.getElementById("outputList");
+                list.innerHTML = ''; 
+
+                for (let i = 1; i <= 10; i++) {
+                    let listItem = document.createElement("li"); 
+                    listItem.innerText = `${i}`;     
+                    list.appendChild(listItem);                    
+                }
+            }
+        </script>
+    
+    
+    </div>
 </body>
 
 </html>
