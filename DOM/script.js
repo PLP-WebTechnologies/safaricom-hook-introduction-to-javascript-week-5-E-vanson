@@ -55,7 +55,6 @@ function calculator(){
     }
     let operation = prompt("Select an opration to perform: (+, -, *, /)");
     if(!['+', '-', '*', '/'].includes(operation)){
-        console.log("This is I", i);
         alert("Select a valid operation");
         return;
     }
@@ -80,4 +79,10 @@ function calculator(){
     console.log("The result is: ", result);
 }
 
-calculator();
+// calculator();
+
+// function greetUser(name) {
+//     let greeting = "Hello there " + name;
+//     return greeting;
+// }
+// greetUser();

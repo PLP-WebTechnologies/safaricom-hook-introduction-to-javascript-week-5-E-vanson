@@ -4,12 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Console Output</title>
+    <title>JS</title>
 </head>
 
 <body>
     <h1>Check the Console</h1>
-    <script src="script.js"></script>
+    
+    <button onclick="greetUser()">Greet</button>
+    <div id="result">
+        Result will appear here
+    </div>
+
+    <script>
+        function greetUser() {
+            let name = prompt("Enter your name: ")
+            let  greeting = "Hello there " + name;
+                document.getElementById("result").innerText = `The result is: ${greeting}`;
+            }    
+    </script>
+
+    <div>
+        <h1>Voter Or Not?</h1>
+        <button onclick="isVoter()">Check if you're a Voter?</button>
+
+        <script>
+            function isVoter(){
+                let age = Number(prompt("Enter your age: "));
+
+                if(age >= 18){
+                    alert("You can vote");
+                }else{
+                    alert("You can not vote!!!");
+                }
+
+            }
+        </script> 
+    </div>
+
+    
 </body>
 
 </html>
