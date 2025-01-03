@@ -8,20 +8,21 @@
 </head>
 
 <body>
-    <h1>Check the Console</h1>
-    
-    <button onclick="greetUser()">Greet</button>
-    <div id="result">
-        Result will appear here
-    </div>
-
-    <script>
-        function greetUser() {
-            let name = prompt("Enter your name: ")
-            let  greeting = "Hello there " + name;
-                document.getElementById("result").innerText = `The result is: ${greeting}`;
+    <div>
+        <h1>Greet User</h1>
+        <button onclick="greetUser()">Greet</button>
+        <div id="result">
+        </div>
+        
+        <script>
+            function greetUser() {
+                let name = prompt("Enter your name: ")
+                let greeting = "Hello there " + name;
+                document.getElementById("result").innerText = `${greeting}`;
             }    
-    </script>
+        </script>
+    </div>
+    
 
     <div>
         <h1>Voter Or Not?</h1>
@@ -59,8 +60,23 @@
                 }
             }
         </script>
-    
-    
+    </div>
+
+    <div>
+        <h1 id="heading">JavaScript Assignment</h1>
+        <p>Learning JavaScript is fun</p>
+
+        <div id="dynamic-content">
+            <button onclick="changeHeading()">Change Heading</button>
+            <script>
+                function changeHeading(){
+                    let heading = "JavaScript in Action!";
+                    document.getElementById("heading").innerText= `${heading}`
+                }
+            </script>
+
+        </div>
+
     </div>
 </body>
 

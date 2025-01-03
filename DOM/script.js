@@ -1,3 +1,4 @@
+// **Variables and Data Types**:
 const namee = "Njung'e Evanson Kamau";
 console.log("The devs' name ", namee);
 
@@ -41,6 +42,7 @@ const devIsEmployyyyed = detailsObj.isEmployed || detailsArr[4];
 console.log("The Devs Occuation Status: ", devOccupation);
 
 
+//  **Operators**:
 function calculator(){
     let a = Number(prompt("Enter the first number: "));
     if (a < 0) {
@@ -79,10 +81,3 @@ function calculator(){
     console.log("The result is: ", result);
 }
 
-// calculator();
-
-// function greetUser(name) {
-//     let greeting = "Hello there " + name;
-//     return greeting;
-// }
-// greetUser();
