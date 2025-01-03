@@ -25,18 +25,59 @@ const detailsObj = {
 };
 console.log("Object with all devs details ", detailsObj);
 
-function calculator(a, b){
-    let a = prompt("Enter the first number: ");
+const devName = detailsObj.name || detailsArr[0];
+console.log("The Devs Name: ", devName);
+
+const devAge = detailsObj.age || detailsArr[1];
+console.log("The Devs Age: ", devAge);
+
+const devOccupation = detailsObj.occupation || detailsArr[2];
+console.log("The Devs Occupation: ", devOccupation);
+
+const devInstitution = detailsObj.institution || detailsArr[3];
+console.log("The Devs Institution: ", devInstitution);
+
+const devIsEmployyyyed = detailsObj.isEmployed || detailsArr[4];
+console.log("The Devs Occuation Status: ", devOccupation);
+
+
+function calculator(){
+    let a = Number(prompt("Enter the first number: "));
     if (a < 0) {
         alert("Number must be 0 or greater");
+        return;
     }
 
-    let b = prompt("Enter the second number: ");
+    let b = Number(prompt("Enter the second number: "));
     if (b < 0) {
-      alert("Number must be 0 or greater");
+        alert("Number must be 0 or greater");
+        return;
+    }
+    let operation = prompt("Select an opration to perform: (+, -, *, /)");
+    if(!['+', '-', '*', '/'].includes(operation)){
+        console.log("This is I", i);
+        alert("Select a valid operation");
+        return;
     }
 
-    let operation = prompt("Select an opration to perform")
-
-
+    let result;
+    switch (operation) {
+        case "+":
+            result = a + b;
+            break;
+        case "-":
+            result = a - b;
+            break;
+        case "/":
+            result = a / b;
+            break;
+        case "*":
+            result = a * b;
+            break;
+        default:
+            console.log("Enter a valid operator");
+    }
+    console.log("The result is: ", result);
 }
+
+calculator();
